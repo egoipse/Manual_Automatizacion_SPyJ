@@ -24,7 +24,7 @@
 <meta name="author" content="Daniel M. Giménez" />
 
 
-<meta name="date" content="2021-01-24" />
+<meta name="date" content="2021-01-25" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -229,7 +229,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="las-bases-de-datos" class="section level1" number="3">
 <h1><span class="header-section-number"> 3</span> Las bases de datos</h1>
-<p>Como se mencionaba, cada fuente administrativa remite la información necesaria para que el INE produzca sus estadísticas en formatos propios. Y esto genera un importante problema para un código de automatización que sea capaz de generar productos a partir de dos o más fuentes administrativas: debe ser capaz de procesar información con distintas estructuras y formatos.</p>
+<p>Cómo se mencionaba, cada fuente administrativa remite la información necesaria para que el INE produzca sus estadísticas en formatos propios. Y esto genera un importante problema para un código de automatización que sea capaz de generar productos a partir de dos o más fuentes administrativas: debe ser capaz de procesar información con distintas estructuras y formatos.</p>
 <p>Hay dos alternativas para lidiar con este problema. La primera es evitar la manipulación de las bases de datos y ajustar el código del script de automatización a cada formato distinto de cada base de datos distinta. La segunda alternativa es intervenir y modificar manualmente las bases de datos para estandarizarlas; así, un único código general es capaz de generar cualquier tabulado.</p>
 <p>Las dos alternativas tienen ventajas y desventajas. En el primer caso, se mantendría la integridad de los datos; se procesarían tal y como han sido remitidos por la fuente. Pero eso a costo de escribir un código muy largo e ineficiente para hacerse cargo de problemas y formatos específicos y puntuales de cada base de datos. La Corporación Adminsitrativa del Poder Judicial, por ejemplo, remite 18 bases de datos con al menos 8 estructuras y formatos distintos. Para que el script pudiera procesar todos esas distintas variantes, tendría que contener un código largo y más lento. Esta solución, además, tendría un limitación importante: si los próximos años se produce alguna modificación de la estructura o de los formatos de los datos remitidos por la fuente administrativa, sería necesario intervenir nuevamente el script para agregar o adaptar código a las nuevas estructuras o formatos.</p>
 <p>La segunda solución, la intervención manual en las bases, permite dos cosas fundamentales: por un lado, escribir un único código con funciones para procesar todos los tipos y formatos de bases de datos; y, por el otro lado, permite reducir las posibilidad de intervenir los contenidos y las funciones del script en caso de que en futuras versiones de los datos se produzca algún cambio de estructura o formato. Y hay una ventaja adicional: interviniendo manualmente las bases para adaptarlas al código del script, es posible usar este mismo script para desarrollar código que permita generar tabulados de fuentes distintas a las contempladas inicialmente en el desarrollo del script. En otros términos, adoptando esta segunda solución, este mismo script puede usarse para automatizar la generación de tabulados de fuentes distintas a las que alimentan las estadísticas de SPyJ.</p>
