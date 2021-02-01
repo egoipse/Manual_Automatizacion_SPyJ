@@ -266,12 +266,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Sin embargo, en los países de habla no inglesa, la coma se usa para separar decimales. Si los datos numéricos de las bases de datos se han creado con esta regla sintáctica, un archivo csv con la coma como delimitador tomaría como dos números distintos a un único número con decimales. Por ello, en países no anglo-parlantes se opta por usar otros caracteres como delimitadores. El más común es el punto y coma. Es el que se recomienda usar para los <em>scripts</em> de automatización en caso de escoger este formato. En cualquier caso, como se verá más adelante, si se usa un archivo csv en el proceso de automatización, los <em>scripts</em> exigen que en el diccionario se explicite el delimitador usado para separar los datos. Por ello es indispensable saber con qué caracter delimitador se creó el archivo csv. Y también se requiere para realizar la verificación de integridad.</p>
 <p>Hay múltiples formas de determinar el delimitador usado para separar los valores. El más común para archivos de menos de 1000000 de casos es intentar cargarlo en Excel; el cuadro de diálogo de importación nos sugerirá el uso de un delimitador a partir de la lectura preliminar del archivo. Excel nos mostrará una previsualización de cómo se desplegaría la hoja de cálculo tras la importación. Si el delimitador sugerido no es el correcto, los datos se mostrarán de forma condesada y desordenada.</p>
 <div class="figure">
-<img src="/home/daniel/Im%C3%A1genes/delimitador_incorrecto.png" alt="" />
+<img src="imagenes/delimitador_incorrecto.png" alt="" />
 <p class="caption">Imagen 1. Delimitador o separador incorrecto: los datos se presentan de forma condensada y desordenada</p>
 </div>
 <p>En ese caso, debe intentarse con cada alternativa de delimitador hasta encontrar el que organice los datos de forma correcta. Ese es el delimitador usado para crear el archivo csv.</p>
 <div class="figure">
-<img src="/home/daniel/Im%C3%A1genes/delimitador_correcto.png" alt="" />
+<img src="imagenes/delimitador_correcto.png" alt="" />
 <p class="caption">Imagen 2. Delimitador o separador correcto: los datos se presentan de forma distribuida en celdas y ordenados</p>
 </div>
 <p>Conociendo el delimitador, ya se puede cargar el archivo para hacer la verificación de integridad. Para ello debe ejecutarse el siguiente comando:</p>
@@ -422,7 +422,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Al definir el tipo de dato de las variables de fecha en las bases de datos, deben seguirse estos estándares. Para programar el tratamiento de los datos de fechas en los <em>scripts</em> no era posible generar código para todos los formatos posibles. Como era necesario adoptar un estándar, se optó por el de ISO. Pero para que funcione, es necesario que en la fase de preparación se convierta las fechas en las bases de dato a este formato.</p>
 <p>Esto se puede hacer de forma fácil en Excel siguiendo los mismos pasos descritos en el acápite anterior: se selecciona toda una columna menos la primera y en el menú “formato de celdas” se elige “más formatos de números”. En el cuadro de diálogo se elige “Fecha” y en las alternativas se escoge el formato que se ajusta al estándar ISO 8601.</p>
 <div class="figure">
-<img src="/home/daniel/Im%C3%A1genes/Fecha.png" alt="" />
+<img src="imagenes/Fecha.png" alt="" />
 <p class="caption">Imagen 3. Definiendo formato de fechas en Excel</p>
 </div>
 <p>Por regla general, los archivos exportados a csv automáticamente ajustan el formato de fecha a ISO 8601. De todas formas, debe detectarse si las variables que correspondan tienen el formato correcto en la verificación de integridad. En caso de que eso no ocurra, debe ajustarse el formato. Si la variable contiene sólo fechas, debe aplicarse la siguiente función:</p>
