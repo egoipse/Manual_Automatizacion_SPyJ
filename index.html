@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es-ES" xml:lang="es-ES">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Manual de uso de scritps de automatización de tabulados de Registros Administrativos de Seguridad Pública y Justicia</title>
+  <meta name="description" content="Instrucciones y reglas de uso del script de automaización de tabulados y validaciones para Registros Administrativos de Seguridad Pública y Justicia" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Manual de uso de scritps de automatización de tabulados de Registros Administrativos de Seguridad Pública y Justicia" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Instrucciones y reglas de uso del script de automaización de tabulados y validaciones para Registros Administrativos de Seguridad Pública y Justicia" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Manual de uso de scritps de automatización de tabulados de Registros Administrativos de Seguridad Pública y Justicia" />
+  
+  <meta name="twitter:description" content="Instrucciones y reglas de uso del script de automaización de tabulados y validaciones para Registros Administrativos de Seguridad Pública y Justicia" />
+  
+
+<meta name="author" content="Daniel M. Giménez" />
+
+
+<meta name="date" content="2021-02-01" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+
+<link rel="next" href="presentación-de-la-primera-parte.html"/>
+<script src="libs/header-attrs-2.6/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Manual: Scripts de Automatización de RRAA</a></li>      
+
+<li class="divider"></li>
+<li class="part"><span><b>PORTADA</b></span></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Presentación</a></li>
+<li class="part"><span><b>PRIMERA PARTE: EL SISTEMA DE SCRIPTS</b></span></li>
+<li class="chapter" data-level="" data-path="presentación-de-la-primera-parte.html"><a href="presentación-de-la-primera-parte.html"><i class="fa fa-check"></i>Presentación de la primera parte</a></li>
+<li class="chapter" data-level="1" data-path="la-perspectiva-de-automatización-aplicada.html"><a href="la-perspectiva-de-automatización-aplicada.html"><i class="fa fa-check"></i><b>1</b> La perspectiva de automatización aplicada</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="la-perspectiva-de-automatización-aplicada.html"><a href="la-perspectiva-de-automatización-aplicada.html#la-solución-de-programadora"><i class="fa fa-check"></i><b>1.1</b> La solución de “programador/a”</a></li>
+<li class="chapter" data-level="1.2" data-path="la-perspectiva-de-automatización-aplicada.html"><a href="la-perspectiva-de-automatización-aplicada.html#la-solución-de-usuarioa-de-excel"><i class="fa fa-check"></i><b>1.2</b> La solución de usuario/a de Excel</a></li>
+<li class="chapter" data-level="1.3" data-path="la-perspectiva-de-automatización-aplicada.html"><a href="la-perspectiva-de-automatización-aplicada.html#el-control-del-flujo"><i class="fa fa-check"></i><b>1.3</b> El control del flujo</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="reglas-de-formato-y-convenciones-del-manual.html"><a href="reglas-de-formato-y-convenciones-del-manual.html"><i class="fa fa-check"></i><b>2</b> Reglas de formato y convenciones del Manual</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="reglas-de-formato-y-convenciones-del-manual.html"><a href="reglas-de-formato-y-convenciones-del-manual.html#formatos-para-los-scripts"><i class="fa fa-check"></i><b>2.1</b> Formatos para los scripts</a></li>
+<li class="chapter" data-level="2.2" data-path="reglas-de-formato-y-convenciones-del-manual.html"><a href="reglas-de-formato-y-convenciones-del-manual.html#formatos_manual"><i class="fa fa-check"></i><b>2.2</b> Formatos de codigo en este manual</a></li>
+</ul></li>
+<li class="part"><span><b>SEGUNDA PARTE: LA FASE MANUAL</b></span></li>
+<li class="chapter" data-level="" data-path="presentación-de-la-segunda-parte.html"><a href="presentación-de-la-segunda-parte.html"><i class="fa fa-check"></i>Presentación de la segunda parte</a></li>
+<li class="chapter" data-level="3" data-path="las-bases-de-datos.html"><a href="las-bases-de-datos.html"><i class="fa fa-check"></i><b>3</b> Las bases de datos</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="las-bases-de-datos.html"><a href="las-bases-de-datos.html#los-formatos-admitidos"><i class="fa fa-check"></i><b>3.1</b> Los formatos admitidos</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="las-bases-de-datos.html"><a href="las-bases-de-datos.html#la-base-de-datos-la-unidad-fundamental"><i class="fa fa-check"></i><b>3.1.1</b> La base de datos: la unidad fundamental</a></li>
+<li class="chapter" data-level="3.1.2" data-path="las-bases-de-datos.html"><a href="las-bases-de-datos.html#verificación-de-la-integridad-de-las-bases-de-datos"><i class="fa fa-check"></i><b>3.1.2</b> Verificación de la integridad de las bases de datos</a></li>
+<li class="chapter" data-level="3.1.3" data-path="las-bases-de-datos.html"><a href="las-bases-de-datos.html#qué-observar-al-realizar-la-verificación-de-integridad"><i class="fa fa-check"></i><b>3.1.3</b> ¿Qué observar al realizar la verificación de integridad?</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="las-bases-de-datos.html"><a href="las-bases-de-datos.html#el-ajuste-de-la-estructura-y-los-tipos-de-información-de-las-bases-de-datos"><i class="fa fa-check"></i><b>3.2</b> El ajuste de la estructura y los tipos de información de las bases de datos</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="las-bases-de-datos.html"><a href="las-bases-de-datos.html#la-limpieza-de-la-base-de-datos"><i class="fa fa-check"></i><b>3.2.1</b> La limpieza de la base de datos</a></li>
+<li class="chapter" data-level="3.2.2" data-path="las-bases-de-datos.html"><a href="las-bases-de-datos.html#los-tipos-de-información-de-las-celdas"><i class="fa fa-check"></i><b>3.2.2</b> Los tipos de información de las celdas</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="las-bases-de-datos.html"><a href="las-bases-de-datos.html#unificación-de-bases-de-datos-divididas-en-múltiples-archivos"><i class="fa fa-check"></i><b>3.3</b> Unificación de bases de datos divididas en múltiples archivos</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="el-diccionario.html"><a href="el-diccionario.html"><i class="fa fa-check"></i><b>4</b> El diccionario</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="el-diccionario.html"><a href="el-diccionario.html#visión-general-del-diccionario"><i class="fa fa-check"></i><b>4.1</b> Visión general del diccionario</a></li>
+<li class="chapter" data-level="4.2" data-path="el-diccionario.html"><a href="el-diccionario.html#la-hoja-meta"><i class="fa fa-check"></i><b>4.2</b> La hoja “meta”</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="el-diccionario.html"><a href="el-diccionario.html#el-año"><i class="fa fa-check"></i><b>4.2.1</b> El año</a></li>
+<li class="chapter" data-level="4.2.2" data-path="el-diccionario.html"><a href="el-diccionario.html#la-ubicación-de-las-bases-de-datos"><i class="fa fa-check"></i><b>4.2.2</b> La ubicación de las bases de datos</a></li>
+<li class="chapter" data-level="4.2.3" data-path="el-diccionario.html"><a href="el-diccionario.html#ubicación-de-los-archivos-validadores"><i class="fa fa-check"></i><b>4.2.3</b> Ubicación de los archivos validadores</a></li>
+<li class="chapter" data-level="4.2.4" data-path="el-diccionario.html"><a href="el-diccionario.html#texto-de-la-fuente-para-tabulados"><i class="fa fa-check"></i><b>4.2.4</b> Texto de la fuente para tabulados</a></li>
+<li class="chapter" data-level="4.2.5" data-path="el-diccionario.html"><a href="el-diccionario.html#instrucción-para-generar-o-evitar-los-tabulados"><i class="fa fa-check"></i><b>4.2.5</b> Instrucción para generar o evitar los tabulados</a></li>
+<li class="chapter" data-level="4.2.6" data-path="el-diccionario.html"><a href="el-diccionario.html#control-del-comportamiento-de-los-scripts"><i class="fa fa-check"></i><b>4.2.6</b> Control del comportamiento de los <em>scripts</em></a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="el-diccionario.html"><a href="el-diccionario.html#la-hoja-de-regiones"><i class="fa fa-check"></i><b>4.3</b> La hoja de regiones</a></li>
+<li class="chapter" data-level="4.4" data-path="el-diccionario.html"><a href="el-diccionario.html#la-hoja-de-provincias"><i class="fa fa-check"></i><b>4.4</b> La hoja de provincias</a></li>
+<li class="chapter" data-level="4.5" data-path="el-diccionario.html"><a href="el-diccionario.html#la-hoja-con-las-cortes-de-apelaciones"><i class="fa fa-check"></i><b>4.5</b> La hoja con las Cortes de Apelaciones</a></li>
+<li class="chapter" data-level="4.6" data-path="el-diccionario.html"><a href="el-diccionario.html#la-hoja-de-delitos"><i class="fa fa-check"></i><b>4.6</b> La hoja de delitos</a></li>
+<li class="chapter" data-level="4.7" data-path="el-diccionario.html"><a href="el-diccionario.html#la-hoja-de-familias-de-delitos"><i class="fa fa-check"></i><b>4.7</b> La hoja de familias de delitos</a></li>
+<li class="chapter" data-level="4.8" data-path="el-diccionario.html"><a href="el-diccionario.html#la-hoja-de-accidentes"><i class="fa fa-check"></i><b>4.8</b> La hoja de accidentes</a></li>
+<li class="chapter" data-level="4.9" data-path="el-diccionario.html"><a href="el-diccionario.html#hojas-con-los-títulos"><i class="fa fa-check"></i><b>4.9</b> Hojas con los títulos</a></li>
+<li class="chapter" data-level="4.10" data-path="el-diccionario.html"><a href="el-diccionario.html#hojas-con-las-notas-al-pie"><i class="fa fa-check"></i><b>4.10</b> Hojas con las notas al pie</a></li>
+<li class="chapter" data-level="4.11" data-path="el-diccionario.html"><a href="el-diccionario.html#hojas-con-series-temporales"><i class="fa fa-check"></i><b>4.11</b> Hojas con series temporales</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="el-archivo-validador.html"><a href="el-archivo-validador.html"><i class="fa fa-check"></i><b>5</b> El archivo validador</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="el-archivo-validador.html"><a href="el-archivo-validador.html#contenido-y-estructura-del-archivo-validador"><i class="fa fa-check"></i><b>5.1</b> Contenido y estructura del archivo validador</a></li>
+<li class="chapter" data-level="5.2" data-path="el-archivo-validador.html"><a href="el-archivo-validador.html#resultado-de-la-validación"><i class="fa fa-check"></i><b>5.2</b> Resultado de la validación</a></li>
+<li class="chapter" data-level="5.3" data-path="el-archivo-validador.html"><a href="el-archivo-validador.html#precauciones"><i class="fa fa-check"></i><b>5.3</b> Precauciones</a></li>
+</ul></li>
+<li class="part"><span><b>TERCERA PARTE: ESTRUCTURA DEL SISTEMA DE SCRIPTS</b></span></li>
+<li class="chapter" data-level="" data-path="presentación-de-la-tercera-parte.html"><a href="presentación-de-la-tercera-parte.html"><i class="fa fa-check"></i>Presentación de la tercera parte</a></li>
+<li class="chapter" data-level="6" data-path="estructura.html"><a href="estructura.html"><i class="fa fa-check"></i><b>6</b> La estructura del script</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="estructura.html"><a href="estructura.html#el-flujo-de-init.r"><i class="fa fa-check"></i><b>6.1</b> El flujo de init.R</a></li>
+<li class="chapter" data-level="6.2" data-path="estructura.html"><a href="estructura.html#generación-de-tabulados-y-validaciones"><i class="fa fa-check"></i><b>6.2</b> Generación de tabulados y validaciones</a></li>
+<li class="chapter" data-level="6.3" data-path="estructura.html"><a href="estructura.html#localización-de-bugs"><i class="fa fa-check"></i><b>6.3</b> Localización de bugs</a></li>
+<li class="chapter" data-level="6.4" data-path="estructura.html"><a href="estructura.html#ejecución-del-script"><i class="fa fa-check"></i><b>6.4</b> Ejecución del script</a></li>
+</ul></li>
+<li class="part"><span><b>ANEXOS</b></span></li>
+<li class="chapter" data-level="" data-path="anexo1.html"><a href="anexo1.html"><i class="fa fa-check"></i>Anexo 1: Nombres de variables de bases de datos</a></li>
+<li class="chapter" data-level="" data-path="anexo-2-mejoras-pendientes-al-script-v-0-1.html"><a href="anexo-2-mejoras-pendientes-al-script-v-0-1.html"><i class="fa fa-check"></i>Anexo 2: Mejoras pendientes al script v. 0.1</a>
+<ul>
+<li class="chapter" data-level="" data-path="anexo-2-mejoras-pendientes-al-script-v-0-1.html"><a href="anexo-2-mejoras-pendientes-al-script-v-0-1.html#mejoras-planificadas"><i class="fa fa-check"></i>Mejoras planificadas</a></li>
+<li class="chapter" data-level="" data-path="anexo-2-mejoras-pendientes-al-script-v-0-1.html"><a href="anexo-2-mejoras-pendientes-al-script-v-0-1.html#mejoras-a-evaluar"><i class="fa fa-check"></i>Mejoras a evaluar</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="anexo3.html"><a href="anexo3.html"><i class="fa fa-check"></i>Anexo 3: Diagrama de flujo: generación automatizada de tabulados de SPyJ</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Manual de uso de scritps de automatización de tabulados de Registros Administrativos de Seguridad Pública y Justicia</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="header">
+<h1 class="title">Manual de uso de scritps de automatización de tabulados de Registros Administrativos de Seguridad Pública y Justicia</h1>
+<p class="author"><em>Daniel M. Giménez</em></p>
+<p class="date"><em>2021-02-01</em></p>
+</div>
+<div id="presentación" class="section level1 unnumbered">
+<h1>Presentación</h1>
+<p>Como parte de la política de mejoramiento continuo que implementa desde 2014, la Unidad de Seguridad Pública y Justicia del Subdepartamento de Condiciones de Vida del INE inició en el transcurso del año 2020 la automatización de los procesos de generación de tabulados de los Informes Anuales de Estadísticas Policiales y de Estadísticas Judiciales. Dicha automatización se ha realizado a través de programación estadística en el software <em>R Project for Statistical Computing</em> (sólo R de aquí en adelante).</p>
+<p>El resultado de la automatización es un sistema de <em>scripts</em> que transforma las bases de datos de las tres fuentes administrativas con las que trabaja la Unidad (Policía de Investigaciones, Carabineros de Chile y Poder Judicial) en los cuadros en formato Excel que se publican junto a los informes anuales arriba mencionados.</p>
+<p>Para que el sistema realice esto, se requiere preparar con precisión los insumos que toman los <em>scripts</em> para generar los tabulados. “Precisión” acá significa “cumpliendo procedimientos muy específicos y aplicándoles de forma estricta ciertos formatos y estructuras”. De lo contrario, el script puede arrojar errores y/o no comportarse como ha sido programado. En otras palabras, el procesamiento automatizado es «frágil»: cualquier incumplimiento, por más mínimo que sea, con los formatos, estructuras de bases de datos o los procedimientos exigidos por los <em>scripts</em> arrojará error o resultados no esperados.</p>
+<p>El objetivo del presente documento es detallar los procedimientos, los formatos y las estructuras que se deben seguir, respetar y/o aplicar para que los <em>scripts</em> de automatización funcionen correctamente, cumplan su propósito y entreguen los tabulados validados para los que han sido programados. Es, por lo tanto, un <strong><em>manual para generar de forma automatizada los tabulados y las validaciones de Registros Administrativos (RRAA) usando el script específicamente programado para esos propósitos</em></strong>.</p>
+<p>A grandes rasgos, este Manual tiene cuatro objetivos:</p>
+<ul>
+<li><p>Guiar con instrucciones detalladas el proceso de generación de los insumos necesarios para la producción de los tabulados y su validación;</p></li>
+<li><p>Explicar cómo se inician y ejecutan los procesos de generación automatizada de tabulados y validaciones contenidos en los <em>scripts</em>;</p></li>
+<li><p>Mostrar de forma genérica la estructura de archivos de los <em>scripts</em> para que cualquier persona con conocimiento de R pueda modificarlos cuando sea necesario generar nuevos cuadros o cambiarlos de posición en los libros finales de Excel;</p></li>
+<li><p>Entregar criterios generales para el mantenimientos del código y para identificar y corregir potenciales errores que pudieran producirse en el procesamiento de bases de datos en las próximas versiones de los Informes Anuales.</p></li>
+</ul>
+<p>Todas las instrucciones y definiciones de este Manual suponen que se han seguido y cumplido los protocolos establecidos en el <strong><em>Manual de Protocolos de Automatización</em></strong>. Ahí se encuentran detalladas no sólo las condiciones mínimas que deben cumplirse para iniciar tareas de automatizado de bases de datos de RRAA, sino también los criterios y estándares mínimos a los que deben ajustarse los datos, los archivos auxiliares, el código y los <em>scripts</em> de automatización.</p>
+<p>De todas formas, en la redacción del presente Manual se ha tenido especial cuidado en explicar en qué consiste cada procedimiento necesario para que el sistema de <em>scripts</em> funcione. La idea no es ejecutar de forma mecánica las instrucciones acá contenidas. Al contrario. Es ejecutarlas con consciencia de lo que hacen y por qué se realizan esas operaciones en particular y de la forma específica en que se realizan. Sólo así se podrá tener control sobre su funcionamiento.</p>
+<p>El Manual consta de tres partes. La primera está dedicada a explicar detalladamente cómo se ha concebido y desarrollado el <em>script</em>; es el marco necesario para comprender lo que se debe hacer (y por qué) para lograr los resultados buscados con su ejecución.</p>
+<p>La segunda parte detalla cómo se generan y preparan los insumos necesarios que alimentarán a los <em>scripts</em> para que produzcan los tabulados: las bases de datos y los archivos auxiliares.</p>
+<p>La tercera parte está dedicada a describir cómo funciona y opera el conjunto de los <em>scripts</em> para que se puedan intervenir en caso de que sea necesario.</p>
+
+</div>
+
+
+
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+<a href="presentación-de-la-primera-parte.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Manual_Uso_Script_SPyJ.pdf", "Manual_Uso_Script_SPyJ.epub"],
+"toc": {
+"collapse": "subsection"
+},
+"highlight": "tango"
+});
+});
+</script>
+
+</body>
+
+</html>
